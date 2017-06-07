@@ -6,10 +6,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>About Me</h1>
-    <p>
-      Hi there! My name is Ian Waites and I am currently attending the Code Fellows 201 Course.
-    </p>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li>
+          <a href="#projects">Projects <span class="caret"></span></a>
+            <div>
+              <ul>
+                <li><a href="201.html">201</a></li>
+                <li><a href="301.html">301</a></li>
+                <li><a href="401.html">401</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="work.html">Work History</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    <div id="home" class="banner">
+      <h1 id="AboutMe">About Me</h1>
+      <p>
+        Hi there! My name is Ian Waites and I am currently attending the Code Fellows 201 Course. This is the start of the about me section. I am sure this section will grow as I think of more stuff to add over time. It has always been hard for me to write about myself!
+      </p>
+    </div>
+    <div id="projects" class="banner2">
+      <h1 id="projectHead">Projects</h1>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
