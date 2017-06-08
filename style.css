@@ -135,8 +135,12 @@ nav > ul > li > div ul > li:hover > a {
 .banner {
   background-color: #888;
   width: 100%;
-  height: 250px;
+  height: 400px;
 
+}
+
+.banner ol {
+  padding-left: 46px;
 }
 
 /* Padding for About Me P tags */

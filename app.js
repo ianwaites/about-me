@@ -64,16 +64,59 @@
 //
 // console.log('asks question about ian consuming alchohol before class and looks for No or N as the correct answer')
 
-var ianDrinks = prompt('How many 40oz of beers did Ian drink before class?');
+// Begin lab question 6
+// var ianDrinks = parseInt(prompt('How many 40oz of beers did Ian drink before class? Make sure you are answering the question using numbers (ex: "1", "2", "3", etc...)'));
+//
+// var counter = 0;
+//
+//   while (counter != 3){
+//       if(ianDrinks < 5 || ianDrinks > 5){
+//         alert('Nice try... Guess again');
+//         counter++
+//         ianDrinks = parseInt(prompt('How many 40oz of beers did Ian drink before class?'));
+//     } else if(ianDrinks === 5){
+//       alert('You are soooooo correct! Ian drank 5 40oz of 211 Steele Reserve before class this morning!');
+//       counter = 3;
+//     } else {
+//       alert('Sorry you ran out of guesses.');
+//       counter = 3;
+//     }
+//
+//   console.log('asks question about ian consuming alchohol before class and gives the user 4 guesses');
+// }
 
-for (var i = 0; i > ianDrinks; i++) {
+// Begin Question 7
+var totalRight = 0;
+var tries = 6;
+var userName = prompt('What is your name?');
 
-  if (ianDrinks === 3) {
-      alert('You are soooooo correct! Ian drank 5 40oz of 211 Steele Reserve before class this morning!');
-    } else if (ianDrinks > 3 || ianDrinks < 3){
-      alert('Nice try... Guess again');
-    }
+while (tries > 0){
+  var sports = ['Hockey', 'Football'];
+  var question = prompt('Ian has a couple of favorite sports, can you guess one of them?');
+  console.log('get here');
 
-  console.log('asks question about ian consuming alchohol before class and looks for No or N as the correct answer')
 
+  var answers = false;
+      console.log('got here');
+     for (var i = 0; i<sports.length; i++){
+         sports[i];
+         if (question === sports[i]){
+           answers = true;
+           totalRight += 1;
+           break;
+         }
+      }
+      if (answers === true){
+         alert('Awesome! ' + sports[0] + ' and ' + sports[1] + ' are Ian\'s favorite sports!');
+         alert(userName + ', it took you ' + tries + ' tries to get ' + totalRight + ' correct answer!');
+         break;
+
+      } else {
+        alert('Sorry! ' + question + ' is not one of Ians favorite sports. You have ' + tries + ' guesses left.');
+        tries--;
+      }
 }
+       if (tries === 0){
+           alert('Sorry you fail.');
+           alert(userName + ', it took you ' + tries + ' tries to get ' + totalRight + ' correct answer!');
+         }
