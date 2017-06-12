@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>About Me</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
   </head>
   <body>
     <nav>
+      <span><img class="face-icon" src="img/me.jpg" /></span>
       <ul>
         <li><a href="#homeNav">Home</a></li>
         <li>
@@ -19,8 +21,8 @@
               </ul>
             </div>
         </li>
-        <li><a href="work.html">Work History</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#workHist">Work History</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <header>
@@ -28,19 +30,29 @@
         <div class="row">
           <div class="intro-text">
             <span class="name">Guy. Man. Dude.</span>
-            <span class="blerb">An about me page: Ian Waites</span>
+            <span class="blerb">An about me page: <span id="what-color">Ian Waites</span></span>
           </div>
         </div>
       </div>
     </header>
-    <section class="aboutSect">
-      <div class="">
-        <div class="aboutme">
-          <a id="homeNav"><h1>About Me</h1></a>
+    <section class="aboutSect" id="homeNav">
+      <div class="container">
+        <div class="row">
+          <div class="text-center col-12">
+            <h2>Who? <span id="what-color">What?</span> Why?</h2>
+          </div>
+        </div>
+        <div class="aboutme" id="pagewrap">
           <p id="aboutP">
-            Hi there! My name is Ian Waites and I am currently attending the Code Fellows 201 Course. This is the start of the about me section. I am sure this section will grow as I think of more stuff to add over time. It has always been hard for me to write about myself!
+            Hi there! My name is Ian Waites and I am currently attending the Code Fellows 201 Course. We were given the assignment to create an About Me page and this is what I came up with.
           </p>
-          <ol>
+          <p id="aboutP">
+            I made the decision to enroll into Code Fellows to really take the time and focus on learning JavaScript. So far I am a week into the program and it has not let me down, I have been learning a lot. I can only imagine how much more is to come in the following weeks and am excited for the opportunity.
+          </p>
+          <p id="aboutP">
+            When I complete the program I will look forward to getting back into the work scene and will feel a lot more confident with JavaScript added to my resume. I would really love to get a job working at a company within the video game industry and manage their web sites (either internal or external facing), some of the companies I want to apply for are Bungie, 343 Industries, Twitch, Valve, and XBox.
+          </p>
+          <ol class="numList">
             <li>This and that</li>
             <li>This and that</li>
             <li>This and that</li>
@@ -59,25 +71,74 @@
       <div class="container">
         <div class="row">
           <div class="text-center col-12">
-            <h2>Projects</h2>
+            <h2>Blood. <span id="what-color">Sweat</span>. Tears.</h2>
           </div>
         </div>
         <div class="projects" id="pagewrap">
           <div class="colText" id="leftCol">
-          	<h2>Course 201</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan erat ac tortor gravida pulvinar ac ut mauris. Curabitur dolor turpis, sodales quis suscipit sed, tincidunt ut dolor. Proin gravida mauris non magna tincidunt accumsan. Suspendisse scelerisque tortor ut interdum finibus. Donec sodales quam et leo consectetur, vitae iaculis ex tincidunt. Cras tincidunt sem nec tincidunt consequat. Integer quis lectus lacus. Integer eros tortor, tempus ac convallis quis, malesuada cursus lacus.</p>
+          	<h3>Course 201</h3>
+            <h4>Foundations of Software Development</h4>
+            <p>Build a strong software development foundation and learn how to use HTML, CSS, JavaScript, and various libraries to create fully-functional web apps.</p>
+            <p>This course guides students toward developing a well-rounded foundation of skills necessary for modern web development. These skills include HTML, CSS, and JavaScript coding; utilizing Git workflow processes; project organization; designing with wireframing; and employing introductory Agile development methods.</p>
+
           </div>
           <div class="colText" id="middleCol">
-          	<h2>Course 301</h2>
-          	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan erat ac tortor gravida pulvinar ac ut mauris. Curabitur dolor turpis, sodales quis suscipit sed, tincidunt ut dolor. Proin gravida mauris non magna tincidunt accumsan. Suspendisse scelerisque tortor ut interdum finibus. Donec sodales quam et leo consectetur, vitae iaculis ex tincidunt. Cras tincidunt sem nec tincidunt consequat. Integer quis lectus lacus. Integer eros tortor, tempus ac convallis quis, malesuada cursus lacus.</p>
+          	<h3>Course 301</h3>
+            <h4>Intermediate Software Development</h4>
+          	<p>Becoming a well-rounded developer is much more than learning language syntax.</p>
+            <p>Study the common core of software development, including MVC, Object-Oriented Programming, functional programming, asynchronous programming, and much more in this intensive course. You will learn how to create and launch web apps in HTML, CSS, and JavaScript, with the help of professional-grade frameworks and libraries from around the web.</p>
+
           </div>
           <aside class="colText" id="rightCol">
-          	<h2>Course 401</h2>
-          	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi accumsan erat ac tortor gravida pulvinar ac ut mauris. Curabitur dolor turpis, sodales quis suscipit sed, tincidunt ut dolor. Proin gravida mauris non magna tincidunt accumsan. Suspendisse scelerisque tortor ut interdum finibus. Donec sodales quam et leo consectetur, vitae iaculis ex tincidunt. Cras tincidunt sem nec tincidunt consequat. Integer quis lectus lacus. Integer eros tortor, tempus ac convallis quis, malesuada cursus lacus.</p>
+          	<h3>Course 401</h3>
+            <h4>Development in Full-Stack JavaScript</h4>
+          	<p>Build full-stack web applications with server-side Node.js and modern, client-side, front-end libraries and frameworks, including AngularJS.</p>
+            <p>Throughout this intensive course, you will study professional software development techniques and practices as you advance your skills in JavaScript. This course includes career development curriculum to get you ready for your job search, plus job search assistance after graduation.</p>
+
           </aside>
         </div>
       </div>
     </section>
-    <!-- <script src="app.js"></script> -->
+    <section class="workSect" id="workHist">
+      <div class="container">
+        <div class="row">
+          <div class="text-center col-12">
+            <h2>Take from the past. Mold the <span id="what-color">future</span>.</h2>
+            <span class="intro-text blerb">My Work History</span>
+          </div>
+        </div>
+        <div id="pagewrap">
+          <div id="aboutMe">
+            <p id="workP">
+              I have been working in the Tech industry for the past 6 years, mostly as a Web Producer and SharePoint Developer/Administrator. I have been lucky to be part of some cool teams over the years and have worked with compies ranging from Microsoft to small start ups and everything in between.
+            </p>
+            <p>
+              A high profile public facing project I was a big part of is over at Microsoft Volume Licensing. I was part of a big revamp of their site which included moving tons of content and updating the layout and design while working in a new proprietary CMS. You can see the work I did here: <a href="https://www.microsoft.com/en-us/licensing">Microsoft Licensing</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contactSect" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="text-center col-12">
+            <h2>Reach out. <span id="what-color">Connect</span>. Say hello.</h2>
+          </div>
+        </div>
+        <div id="pagewrap">
+        <div class="icons">
+          <a href="https://github.com/ianwaites/"><i class="fa fa-github fa-3x social-icon-first" aria-hidden"true"></i></a>
+          <a href="https://www.linkedin.com/in/ian-waites-88b34ab2/"><i class="fa fa-linkedin fa-3x social-icon" aria-hidden"true"></i></a>
+          <a href="https://twitter.com/iwaites"><i class="fa fa-twitter fa-3x social-icon" aria-hidden"true"></i></a>
+          <a href="https://www.facebook.com/iwaites"><i class="fa fa-facebook fa-3x social-icon" aria-hidden"true"></i></a>
+          <a href="https://www.instagram.com/iansdoom/"><i class="fa fa-instagram fa-3x social-icon" aria-hidden"true"></i></a>
+          <a href="https://www.twitch.tv/causeneffects"><i class="fa fa-twitch fa-3x social-icon-last" aria-hidden"true"></i></a>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <script src="js/app.js"></script> -->
   </body>
 </html>

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+/*Deep Orange: #FF5A09
+Light Orange: #ec7f37
+Orange Yellow: #be4f0c*/
 
 /* removing browser default margins */
 html, body {
@@ -19,11 +23,40 @@ body {
   padding-top: 60px;
 }
 
+.social-icon-first {
+  padding: 0 15px 0 0px;
+  float:left;
+
+}
+
+.social-icon {
+  padding: 0 15px 0 15px;
+  float: left;
+
+}
+
+.social-icon-last {
+  padding: 0 0 0 15px;
+  float: left;
+
+}
+
 /* Nav Elements */
+
+.face-icon {
+  margin: 10px 10px 0px 10px;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  float: left;
+  text-align: center;
+  display: inline-block;
+}
+
 
 /* nav sizing and color */
 nav {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, .95);
   color: #888;
   display: block;
   overflow: hidden;
@@ -33,6 +66,7 @@ nav {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 0;
 }
 
 /* removing default padding from ul */
@@ -49,7 +83,7 @@ nav ul li {
 }
 
 /* caret settings for projects drop down - created by using borders to make triangle */
-nav > ul > li > a > .caret {
+/*nav > ul > li > a > .caret {
   border-top: 4px solid #aaa;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
@@ -59,7 +93,7 @@ nav > ul > li > a > .caret {
   width: 0;
   vertical-align: middle;
   transition: color 0.1s linear;
-}
+}*/
 
 /* font color and alignment settings */
 nav > ul > li > a {
@@ -183,10 +217,15 @@ section {
   background-color: #888;
 }
 
-.aboutSect .projSect, h1 {
+.aboutSect > .container > .row > div h2 {
   margin-top: 0px;
+  margin-bottom: 24px;
   padding-top: 24px;
-  padding-left: 46px;
+  color: #000;
+}
+
+#what-color {
+  color: #ec7f37;
 }
 
 .aboutme {
@@ -197,10 +236,14 @@ section {
   padding-left: 46px;
 }
 
-/* Padding for About Me P tags */
-#aboutP {
-  padding-left: 46px;
+.numList li {
+  display: inline;
 }
+
+/* Padding for About Me P tags */
+/*#aboutP {
+  padding-left: 46px;
+}*/
 
 
 /* ---------------- Projects Section --------------- */
@@ -219,7 +262,6 @@ section {
 }
 
 .col-12 {
-  position: ;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
@@ -227,12 +269,46 @@ section {
 
 section h2 {
   margin: 0 0 24px 0;
-  font-family: 'Raleway';
+  padding-top: 24px;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-size: 3em;
   font-weight: 300;
   font-style: normal;
   color: #cecece;
 }
+
+#blood-color {
+
+}
+
+#sweat-color {
+
+}
+
+#tears-color {
+
+}
+
+section h3 {
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  font-style: normal;
+  color: #cecece;
+  margin: .5em 0 .2em 0;
+  padding: 0px;
+}
+
+.projects > .colText > h4 {
+  margin: 0 0 15px 0;
+  font-weight: bold;
+}
+
+section p {
+  margin-top: 0px;
+}
+
+
 
 /* back banner for Projects Section */
 .projSect {
@@ -291,3 +367,57 @@ section h2 {
 
 
 /* ---------------- Work History Section --------------- */
+
+.workSect > .container > .row > div h2 {
+  margin-top: 0px;
+  margin-bottom: 24px;
+  padding-top: 24px;
+  color: #000;
+}
+
+.workSect > .container > .row > div > span {
+  display: block;
+  font-family: 'Raleway';
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: normal;
+}
+
+#workP {
+  margin-top: 30px;
+}
+
+/* ---------------- Contact Section --------------- */
+
+.contactSect {
+  background-color: #888;
+}
+
+.contactSect > .container > .row > div h2 {
+  margin-top: 0px;
+  margin-bottom: 24px;
+  padding-top: 24px;
+  color: #000;
+}
+
+.icons {
+  margin: auto;
+  padding: 5px;
+  max-width: 400px;
+}
+
+.icons > a:link {
+  color: #cecece;
+}
+
+.icons > a:visited {
+  color: #cecece;
+}
+
+.fa:hover {
+  color: #ec7f37;
+}
+
+.icons > a:visited {
+  color: #333;
+}
