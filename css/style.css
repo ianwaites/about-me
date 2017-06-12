@@ -328,6 +328,15 @@ section p {
   display: table;
 }
 
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.linkhover:hover {
+  color: #ec7f37;
+}
+
 /* Projects header color */
 #projectHead {
   color: #cecece;
